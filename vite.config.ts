@@ -33,6 +33,7 @@ window.addEventListener('message', async (message) => {
   server: {
     port: 5173,
     host: true,
+     allowedHosts: ["my-books-my-loves.onrender.com"],
     ...(mode === "development" && hasHttps
       ? {
           https: {
